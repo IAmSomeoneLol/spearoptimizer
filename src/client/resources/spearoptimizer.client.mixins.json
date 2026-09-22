@@ -1,0 +1,18 @@
+{
+	"required": true,
+	"package": "nel.spearoptimizer.client.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"ConnectionMixin",
+		"MinecraftMixin",
+		"MultiPlayerGameModeMixin",
+		"LocalPlayerMixin",
+		"ClientPacketListenerMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"id": "spearoptimizer",
+	"version": "${version}",
+	"name": "Spear Optimizer",
+	"description": "Optimizes network packet delivery and input responsiveness for Spears, Jabs, and attribute swapping.",
+	"authors": [
+		"NelA470"
+	],
+	"contact": {},
+	"license": "AAR",
+	"icon": "assets/spearoptimizer/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"nel.spearoptimizer.SpearOptimizer"
+		],
+		"client": [
+			"nel.spearoptimizer.client.SpearOptimizerClient"
+		]
+	},
+	"mixins": [
+		"spearoptimizer.mixins.json",
+		{
+			"config": "spearoptimizer.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
